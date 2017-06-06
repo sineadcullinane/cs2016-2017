@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Report</title>
+    <style>
+        h1 {font-size: 2em;
+            font-family: Arial, sans-serif;
+            color: white;
+            border-radius: 0px;
+            background-color: black;
+            padding: 10px;
+            margin: 0px;
+        }
+        h2 {font-family: Arial, sans-serif;
+            padding-left: 1em;
+        }
+        p {font-size: 1.25em;  
+           font-family: Arial, sans-serif;
+           padding-right: 10em;
+           padding-left: 4em;
+           line-height: 25px;
+        }
+        body {margin: 0px;
+        }
+        main {padding-bottom: 20px;
+              padding-left: 250px;
+        }
+        nav {position: fixed;
+             height: 100%;
+             width: 250px; 
+             top: 0;
+             left: 0;
+             background: black; 
+        }
+        ul {list-style-type: none;
+            padding: 0pt;
+            margin: 0px;
+        }
+        li {border-bottom: 6px solid black;
+            padding: 20px;
+            background-color: grey;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: Arial, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold; 
+        }
+        a:link {text-decoration: none;
+                color: white;
+        }
+        a:visited {text-decoration: none;
+                   color: white;
+        }
+        a:hover {text-decoration: none;
+                 color: #4d4d4d;
+        }
+    </style>
+
+  </head>
+    <body>
+        <nav>
+           <ul>
+             <li><a href="#intro">0. Introduction</a></li>
+             <li><a href="#perceive">1. Perceivable</a></li>
+             <li><a href="#operable">2. Operable</a></li>
+             <li><a href="#understand">3. Understandable</a></li>
+             <li><a href="#robust">4. Robust</a></li>
+             <li><a href="#conclusion">5. Conclusion</a></li>
+           </ul>
+        </nav>
+        <main>
+           <h1 id="intro">0. Introduction</h1>
+             <p>This report will focus on the e-commerce website for JD Sports, jdsports.ie. The report will analyze its usability/accessibility
+                 based on the 12 guidelines layed out in the Web Content Accessibility Guidelines, grouped under four general principles:
+                 <br> Perceivable, Operable, Understandable, and Robust.
+             </p>
+         
+           <h1 id="perceive">1. Perceivable</h1>
+            <h2>1.1. Text Alternatives</h2>           
+             <p>Inspection of the source code for the site shows that every image on the website has an ALT tag. This makes the site more
+                accessible to those with visual disabilities, as it allows the images on the site to be read out by a screen reader.
+             </p>
+            <h2>1.2. Time-Based Media Alternatives</h2>
+             <p>On the frontpage of the website, there is a video that autoplays. Unfortunately, there is no alternative way to obtain the 
+                 information shown in this video. This is poor accessibility, as it prevents those cannot hear or see the video from obtaining the
+                 information displayed in this video.
+             </p>
+            <h2>1.3. Multi-Presentable Content</h2>
+             <p>The content of this website could be broken down into simple text and it would be possible to still use and understand the 
+                 information displayed on the site. While the orientation, size, and shape of objects on the site are helpful, they are not necessary
+                 for understanding how to use the site.
+             </p>
+            <h2>1.4. Seperate Forground and Background</h2>
+             <p>Colour is frequently used as the only visual cue to indicate an action being carried out (e.g. adding an item to the basket using 
+                 'Quick Buy', pressing the 'Back to Top' button.) This makes the site less accessible to those with colour-blindness. Also, on the
+                 front page of the website, there is a video that autoplays as soon as the page is loaded. There is no way to stop this video from playing
+                 without right-clicking it, and it will continue to loop until you stop it. There is also no way to lower the volume of the video
+                 independent of the overall system volume level. This is incredibly poor accessibility, making it quite 
+                 difficult for a blind person to navigate the site as this video may overpower the sound of their screen reader.</p>
+         
+           <h1 id="operable">2. Operable</h1>
+            <h2>2.1. Keyboard Functionality</h2>
+             <p>It is possible to use this website with only input from the keyboard, though there is little-to-no visual indication
+                 of what is being selected at a given time. This is a minor issue as most people who would use the keyboard-only are those with
+                 visual disabilities.
+             </p>
+            <h2>2.2. Time to Interact with Content</h2>
+             <p>For the majority of the website, there are no time limits set on content. However, the frontpage contains a video that autoplays.
+                 There is no way to pause this video without right-clicking and selecting an option to show controls. This is incredibly inconvenient, 
+                 especially to those with visual disabilities.
+             </p>
+            <h2>2.3. Seizure-Inducing Content</h2>
+             <p>No flashing images, videos, or anything known to cause seizures is found on the site.</p>
+            <h2>2.4. Navigation</h2>
+             <p>Navigation around the site is simple to understand. There is a header at the start of every webpage with several different headings (e.g.
+                 'Men', 'Women', etc...). Hovering over any of these headings causes a drop-down list to appear, in which there are dozens of links to
+                 other webpages grouped under more headings (e.g. 'Footwear', 'Clothing', etc...). Each of these webpages also have titles that clearly
+                 describe what is contained on them.
+             </p>
+
+
+            <h1 id="understand">3. Understandable</h1>
+             <h2>3.1. Readable and Understandable Text</h2>
+              <p>Each webpage contains a lang attribute in the HTML tag that specifies the language of the webpage. There are no other areas in 
+                  the webpage that changes language from the one specified in the HTML tag. 
+              </p>
+             <h2>3.2. Predictable Web Pages</h2>
+              <p>Most the webpages on this website act in predictable ways. There is no situation on any of the pages that changes context with
+                  a change in focus. However, when adding an item to the basket, the website automatically moves the user to the basket webpage. There is
+                  no indication that when the user clicks 'Add to Basket' that they will be forced to go to the basket webpage. If, on the other hand,
+                  the user uses the 'Quick Buy' button to add an item to the basket, they are not automatically transported to the basket webpage.
+                  This is poor usability, as it can easily confuse a user, and is often very irritating in the former case if the user wants to 
+                  continue browsing the website.
+              </p>
+             <h2>3.3. Avoid and Correct Mistakes</h2>
+              <p>If the user uses the search bar to search for an item that does not exist on the site, they are transported to an error page that
+                  tells them the product specified could not be found. It is also not possible to enter a wrong value in the basket webpage, as when
+                  choosing the quantity the user can only press the + or - buttons, they are not allowed to enter a value themselves. All content
+                  requiring user input is also clearly labeled.
+              </p>
+
+            <h1 id="robust">4. Robust</h1>
+             <h2>4.1. Compatibility</h2>
+              <p>All elements on the website have complete start and end tags as per compatibility standards. All IDs are unique, all elements are
+                  nested as needed, and there are no duplicate attributes. It also possible to programmatically obtain the name and role of user interface
+                  components, and programmatically set the states, properties, and values of these components.
+              </p>
+            <h1 id="conclusion">5. Conclusion</h1>
+              <p>To conclude, jdsports.ie passes all Priority 1 checkpoints, meaning it is possible for all groups of users to access.
+                  However, it fails all Priority 2 checkpoints, meaning it will be very difficult for several groups of users to access. For the
+                  e-commerce site of a popular sports store, this is very disappointing. To fail some Priority 2 checkpoints could be overlooked, button
+                  failing all of them is unacceptable. It should not be difficult for such a well-established brand to create a site that passes all of
+                  these checkpoints.
+              </p>
+       </main>
+    </body>
+</html>
