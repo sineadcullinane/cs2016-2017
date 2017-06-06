@@ -8,3 +8,4 @@ Semester 1
 Semester 2:
 - CS2505: Network Computing
 - CS2514: Introduction to Java
+- CS2511: Usability Engineering
