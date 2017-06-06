@@ -20,14 +20,13 @@ server_address = (ipaddr, serverPort)
 # Set how long until timeout
 sock.settimeout(1)
 
-# Set the start time
-startTime = time()
-
 # Variable referring to sequence of ping packages
 seq = 0
 
 # While less than 10 pings have been sent
 while seq < 10:
+    # Set the start time
+    startTime = time()
     # Increment sequence to 1
     seq += 1
     # Ping message contains ping, the package number and the time it was sent
