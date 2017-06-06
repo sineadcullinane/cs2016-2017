@@ -2,7 +2,7 @@
  * HybridBike public class outlining more specific version of BikeLights class
  * that contains Medium Frame component
  *
- * @author Sinead Cullinane 115329236
+ * @author Sinead Cullinane
  */
 public class HybridBike extends BikeLights {
     private MediumFrame mediumFrame;
