@@ -5,7 +5,7 @@ Semester 1
 - CS2513: Intermediate Programming
 - CS2515: Algorithms and Data Structures I
 
-Semester 2:
+Semester 2
 - CS2505: Network Computing
 - CS2514: Introduction to Java
 - CS2511: Usability Engineering
