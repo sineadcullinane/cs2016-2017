@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>jdsports.ie Sample Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Tabs - Vertical Tabs functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+  } );
+  </script>
+  <script>
+   function myFunction() {
+      var x;
+      if (confirm("You've added an item to basket to basket. Would you like to view your basket?") == true) {
+          window.location.href = "placeholder_basket.html";
+      } else {
+      }
+      document.getElementById("demo").innerHTML = x;
+   }
+</script>
+
+  <style>
+  .ui-tabs-vertical { width: 55em; }
+  .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+  .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+  .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
+  .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+  #tabs { font-family: Arial, sans-serif;
+          border: solid black;
+    }
+  #myButton { background-color: black;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              margin-bottom: 20px;
+              margin-left: 725px;
+  }
+  </style>
+    </head>
+    <body>
+     <main>
+
+      <div id="image">
+      <img class="product-image " alt="adidas Originals Gazelle Women's" src="https://i1.adis.ws/i/jpl/jd_023664_a?qlt=60&amp;w=600&amp;h=600&amp;v=1" srcset="
+						https://i1.adis.ws/i/jpl/jd_023664_a?qlt=60&amp;w=600&amp;h=600&amp;v=1 1x,
+						https://i1.adis.ws/i/jpl/jd_023664_a?qlt=60&amp;w=1200&amp;h=1200&amp;v=1 2x
+					" data-zoom-image="https://i1.adis.ws/i/jpl/jd_023664_a?qlt=60&amp;w=1200&amp;h=1200&amp;v=1">
+      </div>
+        <button onclick="myFunction()" id="myButton" title="Add to basket" data-text-adding="Adding" data-text-added="Add to basket">
+          Add to basket
+        </button>
+      </div>
+     </main>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Product Info</a></li>
+          <li><a href="#tabs-2">Delivery</a></li>
+          <li><a href="#tabs-3">Returns</a></li>
+        </ul>
+      <div id="tabs-1">
+        <h2>Product Info</h2>
+          <p>Go retro in these women's Gazelle trainers from adidas Originals, a clean, cool take on the legendary training shoe. This vapour pink model features the classic suede upper, with a soft textile lining and lightweight midsole for effortless comfort when you hit the streets. Finished with the iconic 3-Stripes to the sides.</p>
+      </div>
+      <div id="tabs-2">
+        <h2>Delivery</h2>
+          <p>Standard delivery:
+             Within 5 working days. €4 or FREE on order over €60.</p>
+
+            <p>Collect From Store:
+            FREE. Delivered to your selected JD or Champion store within the Republic of Ireland within a few working days.</p>
+      </div>
+      <div id="tabs-3">
+        <h2>Returns</h2>
+          <p>Free return to store: If you've paid by credit or debit card just pop down to one of our JD or Champion stores, take your despatch note and the goods you want to return, and the store team will be happy to offer you a refund or exchange.</p>
+
+          <p>Free return by post: FREE returns with Parcel Motel! Visit the Parcel Motel website for more information and to download your FREE returns label.</p>
+
+          <p>View our returns information for further details.</p>
+      </div>
+      </div>
+    </body>
+
+
+</html>
