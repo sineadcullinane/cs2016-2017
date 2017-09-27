@@ -97,6 +97,7 @@ def equalsPressed(calculate):
 calculate = Calculate()
 
 """Create top level container and configure calculator interface
+"""
 root = Tk()
 root.configure(bg='lightgray')
 root.minsize(width=200, height=180)
